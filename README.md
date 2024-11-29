@@ -5,7 +5,9 @@ Question 1:
 This analysis aims to model the population growth of E. coli based on data acquired experimentally, the model will be used to estimate a range of population parameters:
 
 **Starting Population Size (N0)** - the number of bacteria in the tube when t=0
+
 **Growth Rate (r)** - The rate at which the bacteria population will grow under optimal conditions in log phase
+
 **Carrying Capacity (K)** - The maximum bacteria population size that can be maintained in the test tube due to limited resources
 
 The data file is called 'experiment.csv' and was acquired from the Open Science Framework (https://osf.io/) contains information on the number of bacteria in the tube at intervals of 60 seconds, we can use this data to create a logistic growth model, which has an exponential phase of bacterial growth, and a lag phase where the growth rate slows down as the population size approaches K.
@@ -19,6 +21,7 @@ We can see from the plot that t=1000 the population is still in its exponential 
 data_subset1 <- growth_data %>% filter(t<1000) %>% mutate(N_log = log(N))
 model1 <- lm(N_log ~ t, data_subset1)
 summary(model1)
+
 ![image](https://github.com/user-attachments/assets/8eb42aff-c56d-49a9-adad-4dc8f1c344bb)
 
 Summarising this model provides an estimate for t at 0.01, which represents a growth rate
