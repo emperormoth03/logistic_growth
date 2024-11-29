@@ -49,44 +49,46 @@ Estimates:
 
 **K** = 6e+10
 
-
-
-
-
-
-
+#################################################################################
 
 Question 2:
+
 #FULL CODE CAN BE FOUND IN THE 'assignment_questions_code.R' file
+
 We can compare the growth of the population under exponential growth based on our parameters to the population size under logistic growth. 
 
 To do this we can enter our parameters into the logistic and exponential growth formulas 
 
 T = 4980
+
 N0 = 879
+
 R = 0.01
+
 K = 6e+10
 
 N <- (N0*K*exp(r*t))/(K-N0+N0*exp(r*t))
 
 (879*6.000e+10*exp(0.01*4980))/(6.000e+10-879+879*exp(0.01*4980))
+
 Putting the values into the formula, we get 6e+10, which is what we expect as the population has already reached its carrying capacity, but what if the population continued to grow exponentially?
 
 N <- N0*exp(r*t)
 
 (879*exp(0.01*4980)
+
 N = 3.73e+24
 
 This time the population is drastically larger, continuing its exponential growth
 
 ![image](https://github.com/user-attachments/assets/8b6b7e08-0c90-4618-a569-e71b36451956)
 
-
-
-
+#######################################################################################
 
 Question 3:
+
 #FULL CODE CAN BE FOUND IN THE 'assignment_questions_code.R' file
+
 We can plot the logistic and exponential function together to see how they compare 
 
 ![comparison_plot](https://github.com/user-attachments/assets/7154b376-735e-4a6b-94f3-bfcee3737f79)
