@@ -28,8 +28,6 @@ Summarising this model provides an estimate for t at 0.01, which represents a gr
 
 We can also calculate an estimate for N0 by doing e to the power of the intercept estimate, e^6.894 = 986.3. This value is close to the value of N where t = 0 in the data frame (879)
 
-
-
 K:
 We can see that the population stabilises (the stationary phase) after around t = 2000, so we can use a time after this to calculate the carrying capacity for the population
 
@@ -37,15 +35,17 @@ data_subset2 <- growth_data %>% filter(t>3000)
 model2 <- lm(N ~ 1, data_subset2)
 summary(model2)
 
-
+![image](https://github.com/user-attachments/assets/a7b30f56-b357-4618-894e-746a636756ea)
 
 We fit a constant linear model as we assume that the carrying capacity will remain stable, we are only interested in the intercept of the N variable which will give us the carrying capacity. 
 
 Summarising this model gives an intercept estimate of 6e+10, which is K
 
-
 Estimates:
-N0 = 879
-R = 0.01
-K = 6e+10
+
+**N0** = 879
+
+**R** = 0.01
+
+**K** = 6e+10
 
