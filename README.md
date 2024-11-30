@@ -1,7 +1,7 @@
 Reproducible analysis of logistic growth
 
 
-Question 1:
+## Question 1
 
 This analysis aims to model the population growth of E. coli based on data acquired experimentally, the model will be used to estimate the population parameters of the growth equation so that the number of bacteria in the tube at a given time can be calculated. The required parameters are as follows:
 
@@ -58,7 +58,7 @@ Estimates:
 
 #################################################################################
 
-Question 2:
+## Question 2
 
 #FULL CODE CAN BE FOUND IN THE 'assignment_questions_code.R' file
 
@@ -95,7 +95,7 @@ We can see there is a considerable increase in population size at t = 4980 under
 
 #######################################################################################
 
-Question 3:
+## Question 3
 
 #FULL CODE CAN BE FOUND IN THE 'assignment_questions_code.R' file
 
