@@ -13,9 +13,11 @@ This analysis aims to model the population growth of E. coli based on data acqui
 
 The data file is called 'experiment.csv' and was acquired from the Open Science Framework (https://osf.io/). The data contains information on the number of bacteria in the tube at intervals of 60 minutes, we can use this data to create a logistic growth model, which has an exponential phase of bacterial growth, followed by a plateau where the growth rate slows down as the population size approaches $`K`$. 
 
-Methods:
+**Methods:**
 
 N and t were plotted against each other with both linear and logarithmic scales of N to visualise the data, the log transformed plot helps to indicate the exponential phase, forming a straight line that can be used to calculate the growth rate $`r`$. 
+
+
 
 $`r`$ and $`N_0`$:
 
@@ -56,8 +58,6 @@ Estimates:
 
 **$`K`$** = 6e+10
 
-#################################################################################
-
 ## Question 2
 
 #FULL CODE CAN BE FOUND IN THE 'assignment_questions_code.R' file
@@ -72,28 +72,31 @@ $`r`$ = 0.01
 
 Calculating the population size at t = 4980 assuming exponential growth
 
-```r
-N <- N0*exp(r*t)
-
-(879*exp(0.01*4980)
+```math
+N(t) = N_0 e^{rt}
 ```
-
+```r
+879*exp(0.01*4980)
+```
 N = 3.73e+24
 
 Calculating the population size at t = 4980 assuming logistic growth growth
 
 $`K`$ = 6e+10
 
+```math
+N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
+```
 ```r
-N <- (N0*K*exp(r*t))/(K-N0+N0*exp(r*t))
-
 (879*6.000e+10*exp(0.01*4980))/(6.000e+10-879+879*exp(0.01*4980))
 ```
+N = 6e+10
+
+Under logistic growth, at t = 4980, the bacteria population has reached its stationary phase, and is at its carrying capacity. 
+
 ![image](https://github.com/user-attachments/assets/8b6b7e08-0c90-4618-a569-e71b36451956)
 
 We can see there is a considerable increase in population size at t = 4980 under exponential growth compared to the logistic model. If the population is not constrained by a carrying capacity, it will continue to grow exponentially. Biologically, there will always be a carrying capacity that limits population growth at a certain point, based on a range of abiotic and biotic factors such as the resources that are available to a bacterial population. There may also be metabolic byproducts produced by the bacteria that inhibit growth if they reach toxic levels, in some cases leading to a decrease in population size (this is known as the decline phase, we may have seen this in the tube if the experiment was continued over more days). Larger bacterial population sizes may also face greater intra and interspecific competition for resources, further limiting growth. Overall, there are many abiotic and biotic factors involved in constraining the potential population growth of bacterial populations, but it is interesting to consider just how fast bacteria can multiply under optimal conditions. We can utilise bacteria's growth potential for a range of applications, fermentation tanks can be set up to produce a range of products from medicines, hormones such as insulin, and food products. 
-
-#######################################################################################
 
 ## Question 3
 
