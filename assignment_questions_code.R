@@ -61,7 +61,7 @@ comparison_plot <- ggplot(aes(x = t, y = N), data = growth_data) +
   scale_y_log10() +
   scale_color_manual(
     name = "Growth Models",  #Legend title
-    values = c("Logistic Growth" = "red", "Exponential Growth" = "blue")) +
+    values = c("Logistic Growth" = "red", "Exponential Growth" = "blue")) +  #Red and blue is a colour blind friendly combination, dashed and solid line help to differentitate curves further
   xlab("Time (minutes)") +
   ylab("Population size (N)") +
   ggtitle("Comparison of Exponential and Logistic Growth") +
