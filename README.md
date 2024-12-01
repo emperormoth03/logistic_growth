@@ -39,9 +39,12 @@ plot2 = ggplot(aes(t,N), data = growth_data) +  #Plot logistic growth curve with
   scale_y_continuous(trans='log10')
 
 grid.arrange(plot1, plot2)
+
+#Save the plot with a fixed size to ensure reproducibility 
+ggsave("growth_comparison_plot.png", plot = growth_comparison_plot, width = 8, height = 6, dpi = 600)
 ```
 
-![image](https://github.com/user-attachments/assets/b8e7d0bc-dbf1-4348-a3c1-02b1e06f23a3)
+![growth_comparison_plot](https://github.com/user-attachments/assets/67dc87e4-240f-4d4c-b129-91c52fc916b5)
 
 **Fig. 1** comparison of logistic growth with linear scale (top) and log scale (bottom), the duration of the exponential phase is more apparent with the log scale plot.
 
