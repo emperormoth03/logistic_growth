@@ -45,9 +45,9 @@ ggsave("growth_comparison_plot.png", plot = growth_comparison_plot, width = 8, h
 
 **Fig. 1** comparison of logistic growth with linear scale (top) and log scale (bottom), the duration of the exponential phase is more apparent with the log scale plot.
 
-$`r`$ and $`N_0`$:
+Finding $`r`$ and $`N_0`$:
 
-We can see from the plot (Fig. 1) that at t=1500 the population is still in its exponential phase, so we can use the line to estimate the exponential growth rate $`r`$.
+We can see from the plot (Fig. 1) that at t=1500 the population is still in its exponential phase, increasing at a constant exponential rate, so we can use the gradient of the curve before this time to estimate the exponential growth rate $`r`$.
 
 ```r
 data_subset1 <- growth_data %>% filter(t<1500) %>% mutate(N_log = log(N))
@@ -57,12 +57,13 @@ summary(model1)
 
 ![image](https://github.com/user-attachments/assets/8eb42aff-c56d-49a9-adad-4dc8f1c344bb)
 
-Using the summary function for this model provides an estimate for t at 0.01, which represents the growth rate.
+Using the summary function for this model provides an estimate for t at 0.01, which represents the growth rate. 
 
 We can also calculate an estimate for $`N_0`$ by doing e to the power of the intercept estimate, $`e`$^6.894 = 986.3. This is necessary as it is the reverse of the ln transformation to make the log plot. We can see that the value is close to the value of N where t = 0 in the data frame (879).
 
-K:
-The population stabilises (the stationary phase) after around t = 2000, so we can use a time after this to calculate the carrying capacity for the population.
+Finding $`K`$:
+
+The population stabilises (the stationary phase) after around t = 2000, so we can use the values of N over the time after this point to calculate the carrying capacity for the population.
 
 ```r
 data_subset2 <- growth_data %>% filter(t>3000)
