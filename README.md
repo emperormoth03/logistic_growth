@@ -60,7 +60,9 @@ Estimates:
 
 ## Question 2
 
-#FULL CODE CAN BE FOUND IN THE 'assignment_questions_code.R' file
+#FULL CODE CAN BE FOUND IN THE 'assignment_questions_code.R' FILE
+
+https://github.com/emperormoth03/logistic_growth/blob/f8b02a03b1a78085666886507922675082c2c4f3/assignment_questions_code.R
 
 We can see how much the population size would differ under exponential growth by using our estimates for $`N_0`$ and $`r`$ in an exponential growth equation. 
 
@@ -100,7 +102,9 @@ We can see there is a considerable increase in population size at t = 4980 under
 
 ## Question 3
 
-#FULL CODE CAN BE FOUND IN THE 'assignment_questions_code.R' file
+#FULL CODE CAN BE FOUND IN THE 'assignment_questions_code.R' FILE
+
+https://github.com/emperormoth03/logistic_growth/blob/f8b02a03b1a78085666886507922675082c2c4f3/assignment_questions_code.R
 
 We can plot the logistic and exponential function together to see how they compare. Initially, both lines increase at the same rate, the exponential phase where bacterial growth is unconstrained. However, as the logistic growth curve approaches K, it levels off. The exponential function continues to grow at a constant rate, as it isn't constrained by a carrying capacity that would otherwise limit expansion. 
 
