@@ -1,9 +1,6 @@
-Reproducible analysis of logistic growth
-
-
 ## Question 1
 
-This analysis aims to model the population growth of an _Eschericia. coli_ population based on data acquired experimentally. We start off with a test tube containing 900$`\mu`$l of growth medium and 100$`\mu`$l of _E. coli_ isolate suspended in the same medium. The model will be used to estimate the population parameters of the growth equation so that the number of bacteria in the tube at a given time can be calculated. The required parameters are as follows:
+This analysis aims to use reproducible methods to model the growth of an _Eschericia. coli_ population based on data acquired experimentally. We start off with a test tube containing 900$`\mu`$l of growth medium and 100$`\mu`$l of _E. coli_ isolate suspended in the same medium. The model will be used to estimate the population parameters of the growth equation so that the number of bacteria in the tube at any given time can be estimate. The required parameters are as follows:
 
 **Starting Population Size ($`N_0`$)** - the number of bacteria in the tube when t=0
 
@@ -50,7 +47,7 @@ ggsave("growth_comparison_plot.png", plot = growth_comparison_plot, width = 8, h
 
 $`r`$ and $`N_0`$:
 
-We can see from the plot that at t=1500 the population is still in its exponential phase, so we can use the line to estimate the exponential growth rate $`r`$.
+We can see from the plot (Fig. 1) that at t=1500 the population is still in its exponential phase, so we can use the line to estimate the exponential growth rate $`r`$.
 
 ```r
 data_subset1 <- growth_data %>% filter(t<1500) %>% mutate(N_log = log(N))
