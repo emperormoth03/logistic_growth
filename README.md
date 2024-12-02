@@ -43,7 +43,7 @@ ggsave("growth_comparison_plot.png", plot = growth_comparison_plot, width = 8, h
 
 ![growth_comparison_plot](https://github.com/user-attachments/assets/67dc87e4-240f-4d4c-b129-91c52fc916b5)
 
-**Fig. 1** comparison of logistic growth with linear scale (top) and log scale (bottom), the duration of the exponential phase is more apparent with the log scale plot.
+>**Fig. 1** Comparison of logistic growth with linear scale (top) and log scale (bottom), the duration of the exponential phase is more apparent with the log scale plot.
 
 Finding $`r`$ and $`N_0`$:
 
@@ -133,4 +133,4 @@ We can plot the logistic and exponential function together to see how they compa
 
 ![comparison_plot](https://github.com/user-attachments/assets/7154b376-735e-4a6b-94f3-bfcee3737f79)
 
-**Fig. 2 Comparison of Logistic and Exponential Growth**
+>**Fig. 2 Comparison of Logistic and Exponential Growth**
