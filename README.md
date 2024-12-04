@@ -1,5 +1,7 @@
 ## Question 1.
 
+#Full code can be found in the 'assignment_questions_code.R' file, click [HERE](https://github.com/emperormoth03/logistic_growth/blob/f8b02a03b1a78085666886507922675082c2c4f3/assignment_questions_code.R)
+
 This analysis aims to use reproducible methods to model the growth of an _Eschericia. coli_ population based on data acquired experimentally. We start off with a test tube containing 900$`\mu`$l of growth medium and 100$`\mu`$l of _E. coli_ isolate suspended in the same medium. The model will be used to estimate the population parameters of the growth equation so that the number of bacteria in the tube at any given time can be estimate. The required parameters are as follows:
 
 **Starting Population Size ($`N_0`$)** - the number of bacteria in the tube when t=0
