@@ -1,4 +1,4 @@
-## Question 1
+## Question 1.
 
 This analysis aims to use reproducible methods to model the growth of an _Eschericia. coli_ population based on data acquired experimentally. We start off with a test tube containing 900$`\mu`$l of growth medium and 100$`\mu`$l of _E. coli_ isolate suspended in the same medium. The model will be used to estimate the population parameters of the growth equation so that the number of bacteria in the tube at any given time can be estimate. The required parameters are as follows:
 
@@ -85,7 +85,7 @@ Estimates:
 
 **$`K`$** = 6e+10
 
-## Question 2
+## Question 2.
 
 #Full code can be found in the 'assignment_questions_code.R' file, click [HERE](https://github.com/emperormoth03/logistic_growth/blob/f8b02a03b1a78085666886507922675082c2c4f3/assignment_questions_code.R)
 
@@ -125,7 +125,7 @@ Under logistic growth, at t = 4980, the bacteria population has reached its stat
 
 We can see there is a considerable increase in population size at t = 4980 under exponential growth compared to the logistic model. If the population is not constrained by a carrying capacity, it will continue to grow exponentially. Biologically, there will always be a carrying capacity that limits population growth after a certain point, when available resources become depleted and waste products begin to accumulate. For example, if the population is aerobic, the oxygen levels may be brought down to level where exponential growth can no longer take place, the death rate will be equal to the division rate. Eventually, we would expect to see a decline phase, when waste products reach toxic levels the death rate exceeds the cell division rate, the population will begin to decline exponentially. This might have occurred if the experiment took place over several more days. Larger bacterial population sizes may also face greater intra and interspecific competition for resources, further limiting growth. Overall, there are many abiotic and biotic factors involved in constraining the potential population growth of bacterial populations, but it is interesting to consider just how fast bacteria can multiply under optimal conditions. We can utilise bacteria's growth potential for a range of applications, fermentation tanks can be set up to produce a range of products from medicines, hormones such as insulin, and food products. 
 
-## Question 3
+## Question 3.
 
 #Full code can be found in the 'assignment_questions_code.R' file, click [HERE](https://github.com/emperormoth03/logistic_growth/blob/f8b02a03b1a78085666886507922675082c2c4f3/assignment_questions_code.R)
 
