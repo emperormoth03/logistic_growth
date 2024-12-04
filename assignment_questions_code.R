@@ -1,10 +1,41 @@
+#Question 1 
+#Plotting growth against time with linear and log scale
+
+growth_data <- read.csv("experiment.csv")  #Load data, assign new data frame to not override original data
+#install.packages("ggplot2")  #Install and load relevant packages
+#install.packages("gridExtra")
+library(ggplot2)
+library(gridExtra)
+
+plot1 = ggplot(aes(t,N), data = growth_data) +  #Plot logistic growth curve with linear scale 
+  geom_point() +
+  geom_line(color = "red", size = 1) +  #Set colour to red for extra differentiation 
+  xlab("t") +
+  ylab("N") +
+  theme_bw()
+  
+plot2 = ggplot(aes(t,N), data = growth_data) +  #Plot logistic growth curve with log scale 
+  geom_point() +
+  geom_line(color = "blue", size = 1) +
+  xlab("t") +
+  ylab("N") +
+  scale_y_continuous(trans='log10')
+
+grid.arrange(plot1, plot2)
+
+#Save the plot with a fixed size to ensure reproducibility 
+ggsave("growth_comparison_plot.png", plot = growth_comparison_plot, width = 8, height = 6, dpi = 600)
+
+
+
+
 #Question 2 
 #Code to calculate population size under logistic and exponential growth
 
 #Population parameters
 T = 4980
 N0 = 879
-R = 0.01
+r = 0.01
 K = 6e+10
 
 #Logistic Growth Function 
