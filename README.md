@@ -2,7 +2,7 @@
 
 #Full code can be found in the 'assignment_questions_code.R' file, click [HERE](https://github.com/emperormoth03/logistic_growth/blob/2919434de3867b5d4552574906422f9df3c44f79/assignment_questions_code.R)
 
-This analysis aims to use reproducible methods to model the growth of an _Eschericia. coli_ population based on data acquired experimentally. We start off with a test tube containing 900$`\mu`$l of growth medium and 100$`\mu`$l of _E. coli_ isolate suspended in the same medium. The model will be used to estimate the population parameters of the growth equation so that the number of bacteria in the tube at any given time can be estimate. The required parameters are as follows:
+This analysis aims to use reproducible methods to model the growth of an _Eschericia. coli_ population based on data acquired experimentally. We start off with a test tube containing 900$`\mu`$l of growth medium and 100$`\mu`$l of _E. coli_ isolate suspended in the same medium. The model will be used to estimate the population parameters of the growth equation so that the number of bacteria in the tube at any given time can be estimated. The required parameters are as follows:
 
 **Starting Population Size ($`N_0`$)** - the number of bacteria in the tube when t=0
 
@@ -131,7 +131,7 @@ We can see there is a considerable increase in population size at t = 4980 under
 
 #Full code can be found in the 'assignment_questions_code.R' file, click [HERE](https://github.com/emperormoth03/logistic_growth/blob/2919434de3867b5d4552574906422f9df3c44f79/assignment_questions_code.R)
 
-We can plot the logistic and exponential function together to see how they compare (Fig. 1). Initially, both curves increase at the same rate, the exponential phase where bacterial growth is unconstrained. However, as the logistic growth curve approaches K, it levels off, reaching a stable stationary phase at 6e+10. The exponential function continues to grow at a constant rate, as it isn't constrained by a carrying capacity that would otherwise limit expansion. 
+We can plot the logistic and exponential function together to see how they compare (Fig. 2). Initially, both curves increase at the same rate, the exponential phase where bacterial growth is unconstrained. However, as the logistic growth curve approaches K, it levels off, reaching a stable stationary phase at 6e+10. The exponential function continues to grow at a constant rate, as it isn't constrained by a carrying capacity that would otherwise limit expansion. 
 
 ![comparison_plot](https://github.com/user-attachments/assets/7154b376-735e-4a6b-94f3-bfcee3737f79)
 
